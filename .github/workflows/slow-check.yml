@@ -1,0 +1,9 @@
+name: Slow Check
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  slow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 40
