@@ -1,0 +1,6 @@
+name: Cross Repo Env Caller
+on:
+  workflow_dispatch:
+jobs:
+  call:
+    uses: thomasito-bac-org/bac-test-2/.github/workflows/reusable-shared-env.yml@main
