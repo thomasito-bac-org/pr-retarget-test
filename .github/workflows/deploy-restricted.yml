@@ -1,0 +1,9 @@
+name: Deploy Restricted
+on:
+  push:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod-restricted
+    steps:
+      - run: echo "deployed from branch ${GITHUB_REF_NAME}"
